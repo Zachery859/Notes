@@ -1,0 +1,99 @@
+// Switch statements are a form of "matching" conditions
+// When you have a finite set of cases you are expecting
+//Ex
+switch(num) {
+  case9:
+      printf("Number is 9!\n");
+  case10:
+      printf("Number is 10!\n");
+      break;
+  default:
+    printf("Number is NOT greater than 10\n");
+    break;
+}
+//sequential if case 9 fails it goes to 10 and 10 goes to 11
+// Coding examples
+int main(int argc, char** argv) {
+return 0
+}
+  // argc is number of arguments passed in
+  // argv is the array of arguments passed in
+  
+  // Task 1: create a function that covers if statements in C
+  void ifstatement() {
+    int moneyspent = 250;
+
+    if (moneyspent > 100) {
+        printf("You spent over 100\n");
+    } else if (moneyspent < 100 || moneyspent == 100) {
+          printf("You spent less than or exactly 100\n");
+    } else {
+        printf("You spent 100\n");
+    }
+}
+
+int condtionalswithmultioperators() {
+  int income = 300;
+  int moneyspentlegos = 100;
+  int moneyspentfood = 50;
+  int moneyspentrent = 1000;
+
+  // base condition
+  if (income - moneyspentrent < 0) {
+      printf("You have no more money\n");
+  } else if (income - moneyspentrent - moneyspentfood < 0) {
+      printf("You have no money to feed yourself\n");
+  } else if (income - moneyspentrent - moneyspentfood - moneyspentlego < 0) {
+      print("You have no money to spend on legos\n");
+  }  else {
+      printf("You still have money");
+  }
+
+  return 0;
+  }
+
+  // Task 3: Change value of variable via if statment
+  int x = 10;
+  int booleanSignificance = 0;
+  if (x == 10) {
+      booleanSignificance = 1;
+
+  printf("The value of booleansignificance is: %d\n", booleanSignificance);
+
+  // Task 4:Switch case
+  // Windows=1, mac=2, linux=3
+  char* operatingSystem = 3;
+  switch(operatingSystem) {
+    case 1:
+        printf("You are using windows\n");
+        break;
+    case 2:
+        // fall through
+    case 3:
+        printf("You are using Linux\n");
+        break;
+    default:
+        printf("You are using an unknown operating system\n");
+        break;
+    }
+  return 0;
+
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
